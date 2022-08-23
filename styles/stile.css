@@ -1,0 +1,364 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    
+}
+/*Body Index*/
+#body_index {
+    background: url(../image/fondo/fondo4.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*MenuHamburguesa*/
+.icon{
+    position: relative;
+    float: left;
+    line-height: 70px;
+    color: rgb(56, 98, 98);
+    font-size: 35px;
+    cursor: pointer;
+    padding-left: 10px;
+}
+
+
+
+#btn-menu {
+    display: none;
+}
+
+.container-menu{
+    position: fixed;
+    background: rgba(33, 33, 33, 0.348);
+    width: 100%;
+    height: 100vh;
+    top: 0;left: 0;
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+}
+#btn-menu:checked ~ .container-menu{
+    opacity: 1;
+    visibility: visible;
+}
+.cont-menu{
+    width: 100%;
+    max-width: 250px;
+    background: linear-gradient(270deg, transparent,#1b262d);
+    height: 100vh;
+    position: relative;
+    transition: all 500ms ease;
+    transform: translateX(-100%);
+}
+#btn-menu:checked ~ .container-menu .cont-menu{
+    transform: translateX(0%);
+}
+.cont-menu #nav{
+    text-align: center;
+    transform: translateY(15%);
+}
+.cont-menu #nav a{
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: #616769;
+    border-left: 5px solid transparent;
+    transition: all 400ms ease;
+}
+.cont-menu #nav a:hover{
+    border-left: 5px solid #080808;
+    background: linear-gradient(270deg, transparent,#3f4549);
+}
+.cont-menu label{
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.buttons {
+    position:absolute;
+    bottom: 10px;
+    left: 9px;
+    display: flex; 
+    justify-content:space-around;     
+}
+
+.buttons a {
+    margin: 3px;
+    text-decoration: none;
+    font-size: 28px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #545252;
+    color: #f1f1f1;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 200, 255, 0.5);
+    transition: all .4s ease-in-out;
+}
+
+.buttons a:hover {
+    transform: scale(1.2);
+}
+
+
+.container_main{
+    margin: auto;
+    width: 800px;
+    padding: 30px;
+}
+
+ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+ul.slider{
+    position: relative;
+    width: 800px;
+    height: 310px;
+}
+
+ul.slider li {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+    
+}
+
+ul.slider li img{
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+  
+}
+
+ul.slider li:first-child {
+    opacity: 1; /*Mostramos el primer <li>*/
+}
+
+ul.slider li:target {
+    opacity: 1; 
+}
+
+.menu {
+    text-align: center;
+    margin: 20px;
+}
+
+.menu li{
+    display: inline-block;
+    text-align: center;
+}
+
+.menu li a{
+    color: rgb(44, 44, 44);
+    text-decoration: none;
+    background-color: rgb(51, 125, 147);
+    padding: 10px;
+    width: 10px;
+    height: 10px;
+    font-size: 12px;
+    border-radius: 10%;
+    
+}
+.vyncrey{
+    width: 80%;
+    padding-left: 190px;
+    padding-top: 100px;
+    
+}
+
+/*Body del productos*/
+.body_productos{
+    height: 100%;
+}
+
+
+.grid_productos {
+    min-height: 100vh;
+    font-size: 30px;
+    background-color: #1b262d;
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+    "header " 
+    "section"
+    "footer ";
+    grid-template-rows: auto auto auto;
+}
+
+.header_producto{
+    grid-area: header;
+    background: #1b262d;
+}
+.box_{
+    position:absolute;
+    width: 5px;
+    height: 5px;
+    
+
+}
+  h1{
+    padding-left: 10px;
+    padding-top: 10px;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    text-shadow: 0 0 10px #00b3ff,
+                 0 0 20px #00b3ff,
+                 0 0 40px #00b3ff,
+                 0 0 80px #00b3ff,
+                 0 0 120px #00b3ff;
+}
+ .lightbar{
+    
+    position: absolute;
+    top: 8px;
+    left: 3px;
+    width: 5px;
+    height: 5%;
+    border-radius: 5px;
+    background: #fff;
+    z-index: 1;
+    box-shadow: 0 0 10px #00b3ff,
+                0 0 20px #00b3ff,
+                0 0 40px #00b3ff,
+                0 0 80px #00b3ff,
+                0 0 120px #00b3ff;
+    animation: animatelightbar 5s linear infinite;
+}
+@keyframes animatelightbar{
+    0%,5%{
+        transform: scaleY(0) translateX(0);
+    }
+    10%{
+        transform: scaleY(1) translateX(0);
+    }
+    90%{
+        transform: scaleY(1) translateX(calc(170px - 5px));
+    }
+    95%,100%{
+        transform: scaleY(0) translateX(calc(170px - 5px));
+    }
+}
+
+
+.section_producto{
+    grid-area: section;
+}
+
+.footer_producto{
+    grid-area: footer;
+    background-color: #0a141d;
+    width: 100%;
+    
+     
+}
+
+/*Galeria de imagen*/
+
+.columna img{
+    width: 100%;
+    margin-top: px;
+}
+
+.galeria{
+    display: flex;
+    padding: 5px;  
+    flex-wrap: wrap;  
+}
+
+.columna{
+    flex: 25%;
+    padding: 5px;
+}
+
+@media all and (max-width: 800px){
+    .columna{
+        flex: 50%;
+    }
+}
+
+@media all and (max-width: 600px){
+    .columna{
+        flex: 100%;
+    }
+}
+/*Footer-productos*/
+.buttons_footer a {
+    margin: 3px;
+    text-decoration: none;
+    font-size: 28px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #545252;
+    color: #f1f1f1;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 200, 255, 0.5);
+    transition: all .4s ease-in-out;
+}
+
+.buttons_footer a:hover {
+    transform: scale(1.6);
+}
+
+.footer_producto .grupo1{
+    width: 100%;
+    padding: 10px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+;
+}
+
+.footer_producto .grupo1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_producto .grupo1 .box figure img{
+    width: 200px;
+}
+
+.footer_producto .grupo1 .box h2{
+    color: white;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.footer_producto .grupo1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+    font-size: 10px;
+}
+
+.footer_producto .grupo2{
+    background-color: #3f4549;
+    padding: 5px;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.footer_producto .grupo2 small{
+    font-size: 15px;
+    
+}
