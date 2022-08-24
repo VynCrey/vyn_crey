@@ -291,7 +291,7 @@ ul.slider li:target {
     }
 }
 
-@media all and (max-width: 600px){
+@media all and (max-width: 400px){
     .columna{
         flex: 100%;
     }
