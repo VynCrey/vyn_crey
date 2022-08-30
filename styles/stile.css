@@ -5,6 +5,7 @@
     font-family: sans-serif;
     
 }
+
 /*Body Index*/
 #body_index {
     background: url(../image/fondo/fondo4.jpg);
@@ -363,3 +364,4 @@ ul.slider li:target {
     font-size: 15px;
     
 }
+
