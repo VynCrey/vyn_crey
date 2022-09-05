@@ -1,0 +1,22 @@
+@import "./partials/header", "./partials/main", "./partials/nav", "./partials/footer";
+
+#body_index {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background: url(../image/fondo/fondo4.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.body{
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    "nav nav"
+    "main main"
+    "footer footer";
+    grid-template-rows: auto auto auto ;
+    grid-template-columns: auto auto auto;
+}
