@@ -1,0 +1,19 @@
+%estructura_nav{
+    #nav{
+        text-align: center;
+        transform: translateY(15%);
+        a{
+            display: block;
+            text-decoration: none;
+            padding: 20px;
+            color: #616769;
+            border-left: 5px solid transparent;
+            transition: all 400ms ease;
+            &:hover{
+                border-left: 5px solid #080808;
+                background: linear-gradient(270deg, transparent,#3f4549);
+            }
+        }
+    }
+}
+$color-gradientes: 270deg, transparent,#1b262d;

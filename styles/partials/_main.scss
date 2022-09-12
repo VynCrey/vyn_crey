@@ -5,5 +5,92 @@
         padding-left: 1%;
         padding-top: 10%;
     }
+
+    .form-box{
+        width: 370px;
+        height: 455px;
+        position: relative;
+        margin: 6% auto;
+        background: #fff;
+        padding: 5px;
+        border-radius: 10px;
+        font-size: 13px;
+        overflow: hidden;
+        .button-box{
+            width: 240px;
+            margin: 30px auto;
+            position: relative;
+            box-shadow: 0 0 20px 9px #e0e0e0;
+            border-radius: 30px;
+            .toggle-btn{
+                padding: 10px 22px;
+                cursor: pointer;
+                background: transparent;
+                border: 0px;
+                outline: none;
+                position: relative;
+            }
+            #elegir{
+                top: 0;
+                left: 0;
+                position: absolute;
+                width: 120px;
+                height: 100%;
+                background: linear-gradient( to right, rgba(71, 71, 71, 0.7), rgba(21, 170, 190, 0.7));
+                border-radius: 30px;
+                transition: 0.8s;
+            }
+        }
+        .input-group{
+            top: 180px;
+            position: absolute;
+            width: 280px;
+            transition: 0.8s;
+            .input-field{
+                @include barras(#054d00);
+            }
+            .submit-btn{
+                width: 85%;
+                padding: 10px 30px;
+                cursor: pointer;
+                display: block;
+                margin: auto;
+                background: linear-gradient( to right, rgba(71, 71, 71, 0.7), rgba(21, 170, 190, 0.7));
+                border: 0px;
+                outline: none;
+                border-radius: 30px;
+            }
+            .check-box{
+                margin: 30px 10px 30px 0;
+
+            }
+            span{
+                color: #757575;
+                font-size: 12px;
+                bottom: 64px;
+                position: absolute;
+            }
+        }
+        #login{
+            left: 50px;
+        }
+        #registrar{
+            left: 450px;
+        }
+    }
+    .galeria{
+        display: flex;
+        padding: 5px;  
+        flex-wrap: wrap;  
+        .columna{
+            flex: 25%;
+            padding: 5px;
+            
+            img{
+                width: 100%;
+                margin-top: 1px;
+            }
+        }
+    }
 }
     

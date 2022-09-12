@@ -1,0 +1,50 @@
+.footer{
+    grid-area: footer;
+    background-color: #0a141d;
+    width: 100%;
+    
+    .grupo1{
+        width: 100%;
+        padding: 10px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        .box{
+            figure{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            }
+            img{
+                width: 200px;
+            }
+            h2{
+                color: white;
+                margin-bottom: 25px;
+                font-size: 20px;
+            }
+            p{
+                color: #efefef;
+                margin-bottom: 10px;
+                font-size: 10px;
+            }    
+        }
+    
+    }
+    .grupo2{
+        background-color: #3f4549;
+        padding: 5px;
+        text-align: center;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        small{
+            font-size: 15px;
+            
+        }
+    }
+    
+}
+
