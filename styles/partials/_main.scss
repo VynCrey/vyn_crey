@@ -1,10 +1,67 @@
 .main{
     grid-area: main;
-    .vyncrey{
+    #vyncrey{
         width: 100%;
         padding-left: 1%;
         padding-top: 10%;
     }
+    
+// modidicar
+.formulario{
+    width:400px ;
+    background: #03121b;
+    padding: 20px;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+    color: white;
+}
+
+.formulario h3{
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.controles{
+    width: 95%;
+    background: #343334;
+    padding: 8px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #1f53c5;
+    font-size: 18px;
+}
+.boton{
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.formulario .boton{
+    width: 100%;
+    background: #1f53c5;
+    border: none;
+    padding: 12px;
+    color: #ffffff;
+    margin: 16px 0;
+    font-size: 16px;
+}
+
+
+#nav .a{
+    background-color:#829caa;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px;;
+    top: 0%;
+    border-radius: 10px;
+}
+
+#ttt{
+    border: 10px solid #03121b;
+    max-width: 600px;
+}
+ 
 
     .form-box{
         width: 370px;
@@ -82,7 +139,7 @@
         display: flex;
         padding: 5px;  
         flex-wrap: wrap;  
-        .columna{
+        .columnaa{
             flex: 25%;
             padding: 5px;
             
@@ -93,4 +150,14 @@
         }
     }
 }
-    
+@media all and (max-width: 425px){
+    .main{
+        .galeria{
+            .columnaa{
+                flex: 100%;
+            }
+        }
+        
+    }
+     
+}    

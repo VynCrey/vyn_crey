@@ -6,14 +6,14 @@
             display: block;
             text-decoration: none;
             padding: 20px;
-            color: #616769;
+            color: #d8e2e5;
             border-left: 5px solid transparent;
             transition: all 400ms ease;
             &:hover{
                 border-left: 5px solid #080808;
-                background: linear-gradient(270deg, transparent,#3f4549);
+                background: linear-gradient(270deg, transparent,#3f4949);
             }
         }
     }
 }
-$color-gradientes: 270deg, transparent,#1b262d;
+$color-gradientes: 270deg, transparent,#6fa778;

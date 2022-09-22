@@ -1,4 +1,4 @@
-@import "./partials/maps", "./partials/estends" , "./partials/mixins","./partials/mediaqueries","./partials/button","./partials/header", "./partials/main", "./partials/nav", "./partials/footer";
+@import "./partials/maps", "./partials/estends" , "./partials/mixins","./partials/button","./partials/header", "./partials/main", "./partials/nav", "./partials/footer";
 *{
     margin: 0;
     padding: 0;
@@ -22,3 +22,17 @@
     background-position: center;
 }
 
+.body{
+
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-areas: 
+    "header "
+    "main"
+    "footer ";
+    grid-template-rows: 80px auto auto ;
+    
+    
+    
+} 
