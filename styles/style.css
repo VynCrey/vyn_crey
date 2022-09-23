@@ -355,7 +355,7 @@
   margin-top: 1px;
 }
 
-@media all and (max-width: 425px) {
+@media screen and (max-width: 425px) {
   .main .galeria .columnaa {
     flex: 100%;
   }
