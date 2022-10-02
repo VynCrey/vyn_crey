@@ -4,7 +4,18 @@
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
-    
+    ::-webkit-scrollbar{
+        width: 12px;
+        background-color: #454d4f;
+        
+    }
+    ::-webkit-scrollbar-thumb{
+        background: linear-gradient(transparent,#3c9727);
+        border-radius: 6px;
+    }
+    ::-webkit-scrollbar-thumb:hover{
+        background: linear-gradient(transparent,#00c6ff);
+    }
 }
 #body_index {
     background: url(../image/fondo/fondo4.jpg);
@@ -15,7 +26,7 @@
     
 }
 #fondo{
-    background: url(../../image/fondo/fondo3.jpg);
+    background: url(../image/fondo/fondo2.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -23,7 +34,6 @@
 }
 
 .body{
-
     height: 100vh;
     width: 100%;
     display: grid;
@@ -32,7 +42,4 @@
     "main"
     "footer ";
     grid-template-rows: 80px auto auto ;
-    
-    
-    
 } 

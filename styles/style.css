@@ -206,13 +206,58 @@
   background-color: #0a141d;
 }
 
+#vyncreyy .box_ {
+  position: relative;
+  width: 500px;
+}
+#vyncreyy h1 {
+  padding-left: 10px;
+  padding-top: 10px;
+  color: #fff;
+  font-size: 2em;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  text-shadow: 0 0 10px #00b3ff, 0 0 20px #00b3ff, 0 0 40px #00b3ff, 0 0 80px #00b3ff, 0 0 120px #00b3ff;
+}
+#vyncreyy .lightbar {
+  margin: 10px;
+  position: absolute;
+  top: 2px;
+  border-left: 3px;
+  width: 5px;
+  height: 50px;
+  border-radius: 5px;
+  background: #fff;
+  z-index: 1;
+  box-shadow: 0 0 10px #00b3ff, 0 0 20px #00b3ff, 0 0 40px #00b3ff, 0 0 80px #00b3ff, 0 0 120px #00b3ff;
+  -webkit-animation: animatelightbar 5s linear infinite;
+          animation: animatelightbar 5s linear infinite;
+}
+
+@keyframes animatelightbar {
+  0%, 5% {
+    transform: scaleY(0) translateX(0);
+  }
+  10% {
+    transform: scaleY(1) translateX(0);
+  }
+  90% {
+    transform: scaleY(1) translateX(185px);
+  }
+  95%, 100% {
+    transform: scaleY(0) translateX(185px);
+  }
+}
 .main {
   grid-area: main;
 }
-.main #vyncrey {
-  width: 100%;
-  padding-left: 1%;
-  padding-top: 10%;
+.main .vyncrey {
+  display: flex;
+  justify-content: center;
+}
+.main .vyncrey #vyncrey {
+  width: 80%;
+  margin: 10%;
 }
 .main .formulario {
   width: 400px;
@@ -222,12 +267,13 @@
   margin-top: 10px;
   border-radius: 10px;
   color: white;
+  margin-bottom: 10px;
 }
 .main .formulario h3 {
   font-size: 22px;
   margin-bottom: 20px;
 }
-.main .controles {
+.main .formulario .controles {
   width: 95%;
   background: #343334;
   padding: 8px;
@@ -236,12 +282,9 @@
   border: 1px solid #1f53c5;
   font-size: 18px;
 }
-.main .boton {
-  height: 40px;
-  text-align: center;
-  font-size: 18px;
-}
 .main .formulario .boton {
+  height: 40px;
+  font-size: 18px;
   width: 100%;
   background: #1f53c5;
   border: none;
@@ -341,6 +384,11 @@
 .main .form-box #registrar {
   left: 450px;
 }
+.main .form-box .btn-login {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
 .main .galeria {
   display: flex;
   padding: 5px;
@@ -428,7 +476,7 @@
 
 .footer {
   grid-area: footer;
-  background-color: #0a141d;
+  background-color: #3f4549;
   width: 100%;
 }
 .footer .grupo1 {
@@ -469,12 +517,82 @@
 .footer .grupo2 small {
   font-size: 15px;
 }
+.footer .contenedor-cards {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.footer .contenedor-cards .cardss {
+  width: 350px;
+  margin: 10px;
+  padding: 20px;
+  box-shadow: 20px 20px 50px rgba(39, 148, 148, 0.5);
+  background: rgba(155, 152, 152, 0.1);
+  border-left: 1px solid rgba(39, 148, 148, 0.5);
+  border-top: 1px solid rgba(39, 148, 148, 0.5);
+  border-radius: 15px;
+}
+.footer .contenedor-cards .cardss .cover_card {
+  width: 100%;
+  height: 180px;
+  border-radius: 14px;
+  overflow: hidden;
+}
+.footer .contenedor-cards .cardss .cover_card img {
+  width: 110%;
+}
+.footer .contenedor-cards .cardss h2 {
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 20px;
+  color: #fff;
+}
+.footer .contenedor-cards .cardss p {
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 300;
+  color: #fff;
+  letter-spacing: 0.5px;
+}
+.footer .contenedor-cards .cardss hr {
+  border: none;
+  height: 0.2px;
+  background: rgba(65, 65, 65, 0.2196078431);
+  margin-top: 30px;
+}
+.footer .contenedor-cards .cardss .footer_card {
+  margin-top: 20px;
+  display: flex;
+  color: #fff;
+  justify-content: space-between;
+}
+.footer .contenedor-cards .cardss .footer_card h3 {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+#footer {
+  background: none;
+}
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
+}
+* ::-webkit-scrollbar {
+  width: 12px;
+  background-color: #454d4f;
+}
+* ::-webkit-scrollbar-thumb {
+  background: linear-gradient(transparent, #3c9727);
+  border-radius: 6px;
+}
+* ::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(transparent, #00c6ff);
 }
 
 #body_index {
@@ -486,7 +604,7 @@
 }
 
 #fondo {
-  background: url(../../image/fondo/fondo3.jpg);
+  background: url(../image/fondo/fondo2.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;

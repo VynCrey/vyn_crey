@@ -1,10 +1,14 @@
 .main{
     grid-area: main;
-    #vyncrey{
-        width: 100%;
-        padding-left: 1%;
-        padding-top: 10%;
+    .vyncrey{
+        display: flex;
+        justify-content: center;
+        #vyncrey{
+        width: 80%;
+        margin: 10%;
+        }
     }
+    
     
 // modidicar
 .formulario{
@@ -15,36 +19,34 @@
     margin-top: 10px;
     border-radius: 10px;
     color: white;
-}
+    margin-bottom: 10px;
+    h3{
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    .controles{
+        width: 95%;
+        background: #343334;
+        padding: 8px;
+        border-radius: 4px;
+        margin-bottom: 16px;
+        border: 1px solid #1f53c5;
+        font-size: 18px;
+    }
 
-.formulario h3{
-    font-size: 22px;
-    margin-bottom: 20px;
-}
-
-.controles{
-    width: 95%;
-    background: #343334;
-    padding: 8px;
-    border-radius: 4px;
-    margin-bottom: 16px;
-    border: 1px solid #1f53c5;
-    font-size: 18px;
-}
-.boton{
-    height: 40px;
-    text-align: center;
-    font-size: 18px;
-}
-
-.formulario .boton{
-    width: 100%;
-    background: #1f53c5;
-    border: none;
-    padding: 12px;
-    color: #ffffff;
-    margin: 16px 0;
-    font-size: 16px;
+    .boton{    
+        height: 40px;
+        font-size: 18px;
+        width: 100%;
+        background: #1f53c5;
+        border: none;
+        padding: 12px;
+        color: #ffffff;
+        margin: 16px 0;
+        font-size: 16px;
+    }
+    
+    
 }
 
 
@@ -133,6 +135,14 @@
         }
         #registrar{
             left: 450px;
+        }
+        .btn-login{
+            display: flex;
+            width: 100%;
+            justify-content: space-evenly ;
+            
+            
+            
         }
     }
     .galeria{
