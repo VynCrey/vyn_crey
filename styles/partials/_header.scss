@@ -6,7 +6,10 @@
     
     
     .centerd-elements{
-        margin: 10px;    
+        margin: 10px;
+        :hover{
+            color: rgb(114, 125, 125);
+        }    
     }
     .icon{
         color: rgb(79, 86, 86);
@@ -16,7 +19,7 @@
     }
     .header_producto{
         grid-area: header;
-        background: #1b262d;
+        background: #2f8ec5;
     }
     #vyncrey{
         .box_{

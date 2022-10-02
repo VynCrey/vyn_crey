@@ -21,9 +21,7 @@
             transition: all 500ms ease;
             transform: translateX(-100%);
             @extend %estructura_nav;
-            
-            
-            
+
             label{
                 position: absolute;
                 right: 5px;
@@ -66,3 +64,13 @@
         transform: translateX(0%);
     }
 }
+//Inicio de la vista Mobile
+@media screen and (max-width: 425px){
+    .nav_index{
+        .container-menu{
+            .cont-menu{
+                height: 95vh;  
+            }
+        }
+    }   
+} 
