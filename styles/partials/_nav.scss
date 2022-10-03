@@ -21,6 +21,7 @@
             transition: all 500ms ease;
             transform: translateX(-100%);
             @extend %estructura_nav;
+            @extend %estructura-vyncrey;
 
             label{
                 position: absolute;
@@ -73,4 +74,5 @@
             }
         }
     }   
-} 
+}
+//fin de la vista mobile

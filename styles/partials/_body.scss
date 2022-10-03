@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+    //efecto en el scroll
     ::-webkit-scrollbar{
         width: 12px;
         background-color: #454d4f;
@@ -15,6 +16,7 @@
     ::-webkit-scrollbar-thumb:hover{
         background: linear-gradient(transparent,#00c6ff);
     }
+    //fin del efecto en el scroll
 }
 #body_index {
     background: url(../image/fondo/fondo4.jpg);
@@ -33,6 +35,7 @@
 }
 
 .body{
+
     height: 100vh;
     width: 100%;
     display: grid;
@@ -42,12 +45,23 @@
     "footer ";
     grid-template-rows: 80px auto auto ;
 } 
+
+//Inicio en vista mobile
 @media screen and (max-width: 425px){
-    #fondo-login{
-        #fondo{
-            background: none;
+    //modificacion en vista mobile para ver completo el carrusel 
+    .galeria-fondo{
+        .body{
+            .main{
+                #carouselExampleIndicators{
+                    margin-top: 35px;
+                    margin-bottom: 35px;
+                }
+            }
         }
     }
-    
-     
+    //modificacion del scroll horizontal 
+    html, body{
+        overflow-x: hidden !important;        
+    } 
 } 
+//fin de vista mobile

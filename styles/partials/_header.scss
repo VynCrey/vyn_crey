@@ -13,7 +13,7 @@
     }
     .icon{
         color: rgb(79, 86, 86);
-        font-size: 35px;
+        font-size: 65px;
         cursor: pointer;
         padding-left: 10px;
     }
@@ -21,123 +21,9 @@
         grid-area: header;
         background: #2f8ec5;
     }
-    #vyncrey{
-        .box_{
-        position:relative;
-        width: 500px;
-        
-        }
-        h1{
-            margin: 10px;
-            padding-left: 10px;
-            padding-top: 10px;
-            color: #fff;
-            font-size: 2em;
-            font-weight: 300;
-            letter-spacing: 0.1em;
-            text-shadow: 0 0 10px #00b3ff,
-                         0 0 20px #00b3ff,
-                         0 0 40px #00b3ff,
-                         0 0 80px #00b3ff,
-                         0 0 120px #00b3ff;
-            
-        }
-        .lightbar{
-            margin: 10px;
-            position: absolute;
-            top: 2px;
-            border-left: 3px;
-            width: 5px;
-            height: 50px;
-            border-radius: 5px;
-            background: #fff;
-            z-index: 1;
-            box-shadow: 0 0 10px #00b3ff,
-                        0 0 20px #00b3ff,
-                        0 0 40px #00b3ff,
-                        0 0 80px #00b3ff,
-                        0 0 120px #00b3ff;
-            animation: animatelightbar 5s linear infinite;
-        }
-
-    }
-    
-    
-
-    @keyframes animatelightbar{
-        0%,5%{
-            transform: scaleY(0) translateX(0);
-        }
-        10%{
-            transform: scaleY(1) translateX(0);
-        }
-        90%{
-            transform: scaleY(1) translateX(calc(190px - 5px));
-        }
-        95%,100%{
-            transform: scaleY(0) translateX(calc(190px - 5px));
-        }
-    }
+    @extend %estructura-vyncrey;
 
 }
 #fondoo{
     background-color: #0a141d;
-}
-// modificar y agregar con los estens
-#vyncreyy{
-    .box_{
-    position:relative;
-    width: 500px;
-    
-    }
-    h1{
-        
-        padding-left: 10px;
-        padding-top: 10px;
-        color: #fff;
-        font-size: 2em;
-        font-weight: 300;
-        letter-spacing: 0.1em;
-        text-shadow: 0 0 10px #00b3ff,
-                     0 0 20px #00b3ff,
-                     0 0 40px #00b3ff,
-                     0 0 80px #00b3ff,
-                     0 0 120px #00b3ff;
-        
-    }
-    .lightbar{
-        margin: 10px;
-        position: absolute;
-        top: 2px;
-        border-left: 3px;
-        width: 5px;
-        height: 50px;
-        border-radius: 5px;
-        background: #fff;
-        z-index: 1;
-        box-shadow: 0 0 10px #00b3ff,
-                    0 0 20px #00b3ff,
-                    0 0 40px #00b3ff,
-                    0 0 80px #00b3ff,
-                    0 0 120px #00b3ff;
-        animation: animatelightbar 5s linear infinite;
-    }
-
-}
-
-
-
-@keyframes animatelightbar{
-    0%,5%{
-        transform: scaleY(0) translateX(0);
-    }
-    10%{
-        transform: scaleY(1) translateX(0);
-    }
-    90%{
-        transform: scaleY(1) translateX(calc(190px - 5px));
-    }
-    95%,100%{
-        transform: scaleY(0) translateX(calc(190px - 5px));
-    }
 }
